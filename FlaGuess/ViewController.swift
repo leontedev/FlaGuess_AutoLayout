@@ -39,12 +39,16 @@ class ViewController: UIViewController {
     func askQuestion(alert: UIAlertAction! = nil) {
         round += 1
         
-        if round == 11 {
+        if round > 10 {
             title = "Final Score: \(score) "
             
             let ac = UIAlertController(title: "Game Over", message: "Your final score is \(score)", preferredStyle: .alert)
-            ac.addAction(UIAlertAction(title: "OK", style: .default, handler: askQuestion))
+            ac.addAction(UIAlertAction(title: "OK", style: .default))
             present(ac, animated: true, completion: nil)
+            
+            button1.isHidden = true
+            button2.isHidden = true
+            button3.isHidden = true
             
         } else {
             countries.shuffle()
