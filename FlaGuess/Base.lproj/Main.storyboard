@@ -20,6 +20,9 @@
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oZI-9Y-1fJ" userLabel="Flag 1">
                                 <rect key="frame" x="107" y="138" width="200" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="oZI-9Y-1fJ" secondAttribute="height" multiplier="2:1" id="udd-Fr-96X"/>
+                                </constraints>
                                 <state key="normal" image="us"/>
                                 <connections>
                                     <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HGL-hp-QXw"/>
@@ -27,6 +30,9 @@
                             </button>
                             <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wte-Ha-yMN" userLabel="Flag 2">
                                 <rect key="frame" x="107" y="438" width="200" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Wte-Ha-yMN" secondAttribute="height" multiplier="2:1" id="K4g-pZ-NDJ"/>
+                                </constraints>
                                 <state key="normal" image="us"/>
                                 <connections>
                                     <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cyu-AM-og7"/>
@@ -34,6 +40,9 @@
                             </button>
                             <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L4q-9Q-mta" userLabel="Flag 3">
                                 <rect key="frame" x="107" y="288" width="200" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="L4q-9Q-mta" secondAttribute="height" multiplier="2:1" id="TGh-9n-qKP"/>
+                                </constraints>
                                 <state key="normal" image="us"/>
                                 <connections>
                                     <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="I1f-mf-VFv"/>
@@ -46,6 +55,9 @@
                             <constraint firstItem="L4q-9Q-mta" firstAttribute="top" secondItem="oZI-9Y-1fJ" secondAttribute="bottom" constant="50" id="3LC-WD-nzX"/>
                             <constraint firstItem="L4q-9Q-mta" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9BQ-Hj-Nu7"/>
                             <constraint firstItem="oZI-9Y-1fJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="AqK-8Y-SZg"/>
+                            <constraint firstItem="L4q-9Q-mta" firstAttribute="height" secondItem="oZI-9Y-1fJ" secondAttribute="height" id="EOa-fl-zHR"/>
+                            <constraint firstItem="Wte-Ha-yMN" firstAttribute="height" secondItem="L4q-9Q-mta" secondAttribute="height" id="NHY-TT-9Us"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="Wte-Ha-yMN" secondAttribute="bottom" constant="20" id="P4F-3a-xUu"/>
                             <constraint firstItem="Wte-Ha-yMN" firstAttribute="top" secondItem="L4q-9Q-mta" secondAttribute="bottom" constant="50" id="kew-Y5-Plc"/>
                             <constraint firstItem="oZI-9Y-1fJ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="uCA-qe-EuU"/>
                         </constraints>
